@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backg"
+    tools:context=".Activities.SignInActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/emailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:minHeight="48dp"
+            android:hint="Email"
+            android:textColorHint="#919191"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/passET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginTop="20dp"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textColorHint="#919191"
+            android:textColor="@color/white"
+            android:hint="password" />
+
+
+        <Button
+            android:id="@+id/inBtn"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#EF8787"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="Sign in" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? "
+            android:layout_marginLeft="80dp"
+            android:textColor="@color/white"
+            android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/upTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sign up? "
+                android:layout_marginLeft="20dp"
+                android:textColor="#EF8787"
+                android:textAlignment="center" />
+
+    </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
